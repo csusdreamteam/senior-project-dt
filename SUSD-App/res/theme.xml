@@ -52,7 +52,10 @@
     <image name="sliderEmpty.png" type="multi"  />
     <image name="sliderEmptyLeft.png" type="multi"  />
     <image name="sliderEmptyRight.png" type="multi"  />
-    <theme name="SUSD">
+    <image name="switch_mask.png" type="multi"  />
+    <image name="switch_off.png" type="multi"  />
+    <image name="switch_on.png" type="multi"  />
+    <theme name="Theme 1">
         <val key="@PopupDialogArrowBool" value="false" />
         <val key="@calTitleDayStyleBool" value="true" />
         <val key="@calTransitionVertBool" value="false" />
@@ -732,9 +735,6 @@
         <border key="sel#border" type="empty" />
         <val key="transparency" value="0" />
     </theme>
-    <image name="switch_mask.png" type="multi"  />
-    <image name="switch_off.png" type="multi"  />
-    <image name="switch_on.png" type="multi"  />
     <image name="TitleArea.borderBottom_2.png" type="multi"  />
     <image name="TitleArea.borderBottomL_2.png" type="multi"  />
     <image name="TitleArea.borderBottomR_2.png" type="multi"  />
