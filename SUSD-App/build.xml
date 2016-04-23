@@ -66,8 +66,8 @@
 	<target depends="jar" name="compile-test">
         <mkdir dir="${build.test.classes.dir}" />
         <javac destdir="${build.test.classes.dir}" compiler="modern"
-            source="1.8"
-            target="1.8"
+            source="1.5"
+            target="1.5"
             bootclasspath="CLDC11.jar"        	
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
 	        <src path="${test.src.dir}"/>
@@ -133,16 +133,16 @@
 	        <!-- This is the previous javac task leaving it here in case of a regression with the new javac tasks
 	        
 	         javac destdir="build/tmp" compiler="extJavac" executable="${javacPath}"
-	            source="1.8"
-	            target="1.8" 
+	            source="1.5"
+	            target="1.5" 
 	            bootclasspath="lib/CLDC11.jar"
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
 	            <src path="src"/>
 	        </javac-->
 	        
 	        <javac destdir="build/tmp" compiler="modern"
-	            source="1.8"
-	            target="1.8" 
+	            source="1.5"
+	            target="1.5" 
 	            bootclasspath="lib/CLDC11.jar"
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
 	            <src path="src"/>
