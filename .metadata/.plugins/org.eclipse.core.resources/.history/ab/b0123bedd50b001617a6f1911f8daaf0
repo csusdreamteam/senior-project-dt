@@ -66,8 +66,8 @@
 	<target depends="jar" name="compile-test">
         <mkdir dir="${build.test.classes.dir}" />
         <javac destdir="${build.test.classes.dir}" compiler="modern"
-            source="1.8"
-            target="1.8"
+            source="1.5"
+            target="1.5"
             bootclasspath="CLDC11.jar"        	
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
 	        <src path="${test.src.dir}"/>
@@ -141,8 +141,8 @@
 	        </javac-->
 	        
 	        <javac destdir="build/tmp" compiler="modern"
-	            source="1.8"
-	            target="1.8" 
+	            source="1.5"
+	            target="1.5" 
 	            bootclasspath="lib/CLDC11.jar"
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
 	            <src path="src"/>
@@ -165,8 +165,8 @@
 	        <mkdir dir="native/javase" />
 	        <mkdir dir="native/internal_tmp" />
 	        <javac destdir="native/internal_tmp" compiler="modern"
-	            source="1.8"
-	            target="1.8"
+	            source="1.5"
+	            target="1.5"
 	            bootclasspath="lib/CLDC11.jar"
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls:build/tmp">
 	            <src path="native/javase"/>
