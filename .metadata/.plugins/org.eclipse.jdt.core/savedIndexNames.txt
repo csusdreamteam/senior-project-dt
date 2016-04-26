@@ -1,0 +1,6 @@
+INDEX VERSION 1.127+C:\Users\madno\Documents\GitHub\senior-project-dt\.metadata\.plugins\org.eclipse.jdt.core
+4198637451.index
+1702011860.index
+141252191.index
+2220177447.index
+2742585591.index
