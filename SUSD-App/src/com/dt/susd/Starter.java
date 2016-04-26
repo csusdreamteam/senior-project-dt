@@ -23,6 +23,7 @@ public class Starter {
             return;
         }
         new StateMachine("/theme");        
+        
     }
 
     public void stop() {
