@@ -1657,6 +1657,7 @@ Caused by: /Users/Madnoyz/Documents/Github/senior-project-dt/SUSD-App/build.xml:
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
+<<<<<<< HEAD
 	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2118)
 	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:207)
 	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2613)
@@ -3590,6 +3591,8 @@ java.lang.NullPointerException
 java.lang.NullPointerException
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 !SESSION 2016-04-26 10:53:51.923 -----------------------------------------------
 eclipse.buildId=4.4.2.M20150204-1700
 java.version=1.8.0_74
@@ -4018,6 +4021,9 @@ java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2118)
 	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:207)
@@ -4056,7 +4062,10 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 
 !ENTRY org.eclipse.ant.launching 4 0 2016-04-26 11:06:08.291
 !MESSAGE Ant Build Failed
@@ -4354,6 +4363,7 @@ Caused by: /Users/Madnoyz/Documents/Github/senior-project-dt/SUSD-App/build.xml:
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+<<<<<<< HEAD
 >>>>>>> master
 
 !ENTRY org.eclipse.ant.launching 4 0 2016-04-28 15:32:50.557
@@ -4454,3 +4464,5 @@ Caused by: /Users/Madnoyz/Documents/Github/senior-project-dt/SUSD-App/build.xml:
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+=======
+>>>>>>> master

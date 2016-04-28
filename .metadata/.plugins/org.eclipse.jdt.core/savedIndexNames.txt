@@ -3,7 +3,10 @@ INDEX VERSION 1.127+/Users/Madnoyz/Documents/Github/senior-project-dt/.metadata/
 1784051687.index
 2043952971.index
 4011248231.index
+<<<<<<< HEAD
 1667701654.index
+=======
+>>>>>>> master
 2280980642.index
 3781870007.index
 2492479126.index
