@@ -26,4 +26,26 @@ public class StateMachine extends StateMachineBase {
      */
 	protected void initVars(Resources res){
 	}
+
+    @Override
+    protected void onMain_ButtonAction(Component c, ActionEvent event) {
+
+    
+    }
+
+    @Override
+    protected void postMain(Form f) {
+    
+    }
+
+    @Override
+    protected void onCreateMain() {
+    
+    }
+
+    @Override
+    protected void onLoginPage_LoginAction(Component c, ActionEvent event) {
+
+    
+    }
 }
