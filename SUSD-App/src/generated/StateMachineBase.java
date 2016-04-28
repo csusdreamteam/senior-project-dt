@@ -11,7 +11,6 @@ import com.codename1.ui.*;
 import com.codename1.ui.util.*;
 import com.codename1.ui.plaf.*;
 import java.util.Hashtable;
-import com.codename1.ui.events.*;
 
 public abstract class StateMachineBase extends UIBuilder {
     private Container aboutToShowThisContainer;
@@ -23,7 +22,8 @@ public abstract class StateMachineBase extends UIBuilder {
     * @deprecated use the version that accepts a resource as an argument instead
     
 **/
-    protected void initVars() {}
+    @Deprecated
+	protected void initVars() {}
 
     protected void initVars(Resources res) {}
 
@@ -106,7 +106,8 @@ public abstract class StateMachineBase extends UIBuilder {
         this(res, null, loadTheme);
     }
 
-    protected void exitForm(Form f) {
+    @Override
+	protected void exitForm(Form f) {
         if("Main".equals(f.getName())) {
             exitMain(f);
             aboutToShowThisContainer = null;
@@ -120,7 +121,8 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void exitMain(Form f) {
     }
 
-    protected void beforeShow(Form f) {
+    @Override
+	protected void beforeShow(Form f) {
     aboutToShowThisContainer = f;
         if("Main".equals(f.getName())) {
             beforeMain(f);
@@ -135,7 +137,8 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void beforeMain(Form f) {
     }
 
-    protected void beforeShowContainer(Container c) {
+    @Override
+	protected void beforeShowContainer(Container c) {
         aboutToShowThisContainer = c;
         if("Main".equals(c.getName())) {
             beforeContainerMain(c);
@@ -150,7 +153,8 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void beforeContainerMain(Container c) {
     }
 
-    protected void postShow(Form f) {
+    @Override
+	protected void postShow(Form f) {
         if("Main".equals(f.getName())) {
             postMain(f);
             aboutToShowThisContainer = null;
@@ -164,7 +168,8 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void postMain(Form f) {
     }
 
-    protected void postShowContainer(Container c) {
+    @Override
+	protected void postShowContainer(Container c) {
         if("Main".equals(c.getName())) {
             postContainerMain(c);
             aboutToShowThisContainer = null;
@@ -178,7 +183,8 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void postContainerMain(Container c) {
     }
 
-    protected void onCreateRoot(String rootName) {
+    @Override
+	protected void onCreateRoot(String rootName) {
         if("Main".equals(rootName)) {
             onCreateMain();
             aboutToShowThisContainer = null;
@@ -192,7 +198,8 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void onCreateMain() {
     }
 
-    protected Hashtable getFormState(Form f) {
+    @Override
+	protected Hashtable getFormState(Form f) {
         Hashtable h = super.getFormState(f);
         if("Main".equals(f.getName())) {
             getStateMain(f, h);
@@ -207,7 +214,8 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void getStateMain(Form f, Hashtable h) {
     }
 
-    protected void setFormState(Form f, Hashtable state) {
+    @Override
+	protected void setFormState(Form f, Hashtable state) {
         super.setFormState(f, state);
         if("Main".equals(f.getName())) {
             setStateMain(f, state);
