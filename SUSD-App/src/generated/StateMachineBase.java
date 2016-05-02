@@ -11,6 +11,7 @@ import com.codename1.ui.*;
 import com.codename1.ui.util.*;
 import com.codename1.ui.plaf.*;
 import java.util.Hashtable;
+import com.codename1.ui.events.*;
 
 public abstract class StateMachineBase extends UIBuilder {
     private Container aboutToShowThisContainer;
@@ -22,8 +23,7 @@ public abstract class StateMachineBase extends UIBuilder {
     * @deprecated use the version that accepts a resource as an argument instead
     
 **/
-    @Deprecated
-	protected void initVars() {}
+    protected void initVars() {}
 
     protected void initVars(Resources res) {}
 
@@ -122,10 +122,6 @@ public abstract class StateMachineBase extends UIBuilder {
         this(res, null, loadTheme);
     }
 
-<<<<<<< HEAD
-    @Override
-	protected void exitForm(Form f) {
-=======
     public com.codename1.ui.Button findButton1(Component root) {
         return (com.codename1.ui.Button)findByName("Button1", root);
     }
@@ -222,14 +218,14 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
-    public com.codename1.ui.Container findCalendarContainer(Component root) {
-        return (com.codename1.ui.Container)findByName("CalendarContainer", root);
+    public com.codename1.ui.Container findHomeTab(Component root) {
+        return (com.codename1.ui.Container)findByName("HomeTab", root);
     }
 
-    public com.codename1.ui.Container findCalendarContainer() {
-        com.codename1.ui.Container cmp = (com.codename1.ui.Container)findByName("CalendarContainer", Display.getInstance().getCurrent());
+    public com.codename1.ui.Container findHomeTab() {
+        com.codename1.ui.Container cmp = (com.codename1.ui.Container)findByName("HomeTab", Display.getInstance().getCurrent());
         if(cmp == null && aboutToShowThisContainer != null) {
-            cmp = (com.codename1.ui.Container)findByName("CalendarContainer", aboutToShowThisContainer);
+            cmp = (com.codename1.ui.Container)findByName("HomeTab", aboutToShowThisContainer);
         }
         return cmp;
     }
@@ -282,14 +278,14 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
-    public com.codename1.ui.Label findCalendarTab(Component root) {
-        return (com.codename1.ui.Label)findByName("CalendarTab", root);
+    public com.codename1.ui.Container findCalendarTab(Component root) {
+        return (com.codename1.ui.Container)findByName("CalendarTab", root);
     }
 
-    public com.codename1.ui.Label findCalendarTab() {
-        com.codename1.ui.Label cmp = (com.codename1.ui.Label)findByName("CalendarTab", Display.getInstance().getCurrent());
+    public com.codename1.ui.Container findCalendarTab() {
+        com.codename1.ui.Container cmp = (com.codename1.ui.Container)findByName("CalendarTab", Display.getInstance().getCurrent());
         if(cmp == null && aboutToShowThisContainer != null) {
-            cmp = (com.codename1.ui.Label)findByName("CalendarTab", aboutToShowThisContainer);
+            cmp = (com.codename1.ui.Container)findByName("CalendarTab", aboutToShowThisContainer);
         }
         return cmp;
     }
@@ -318,18 +314,6 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
-    public com.codename1.ui.Button findLaunchLinkButton(Component root) {
-        return (com.codename1.ui.Button)findByName("LaunchLinkButton", root);
-    }
-
-    public com.codename1.ui.Button findLaunchLinkButton() {
-        com.codename1.ui.Button cmp = (com.codename1.ui.Button)findByName("LaunchLinkButton", Display.getInstance().getCurrent());
-        if(cmp == null && aboutToShowThisContainer != null) {
-            cmp = (com.codename1.ui.Button)findByName("LaunchLinkButton", aboutToShowThisContainer);
-        }
-        return cmp;
-    }
-
     public com.codename1.ui.Label findLabel1(Component root) {
         return (com.codename1.ui.Label)findByName("Label1", root);
     }
@@ -354,14 +338,14 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
-    public com.codename1.ui.Container findMainContainer(Component root) {
-        return (com.codename1.ui.Container)findByName("MainContainer", root);
+    public com.codename1.ui.Button findLaunchResourceButton(Component root) {
+        return (com.codename1.ui.Button)findByName("LaunchResourceButton", root);
     }
 
-    public com.codename1.ui.Container findMainContainer() {
-        com.codename1.ui.Container cmp = (com.codename1.ui.Container)findByName("MainContainer", Display.getInstance().getCurrent());
+    public com.codename1.ui.Button findLaunchResourceButton() {
+        com.codename1.ui.Button cmp = (com.codename1.ui.Button)findByName("LaunchResourceButton", Display.getInstance().getCurrent());
         if(cmp == null && aboutToShowThisContainer != null) {
-            cmp = (com.codename1.ui.Container)findByName("MainContainer", aboutToShowThisContainer);
+            cmp = (com.codename1.ui.Button)findByName("LaunchResourceButton", aboutToShowThisContainer);
         }
         return cmp;
     }
@@ -390,18 +374,6 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
-    public com.codename1.ui.Container findTab3(Component root) {
-        return (com.codename1.ui.Container)findByName("Tab3", root);
-    }
-
-    public com.codename1.ui.Container findTab3() {
-        com.codename1.ui.Container cmp = (com.codename1.ui.Container)findByName("Tab3", Display.getInstance().getCurrent());
-        if(cmp == null && aboutToShowThisContainer != null) {
-            cmp = (com.codename1.ui.Container)findByName("Tab3", aboutToShowThisContainer);
-        }
-        return cmp;
-    }
-
     public com.codename1.ui.Tabs findTabs(Component root) {
         return (com.codename1.ui.Tabs)findByName("Tabs", root);
     }
@@ -410,30 +382,6 @@ public abstract class StateMachineBase extends UIBuilder {
         com.codename1.ui.Tabs cmp = (com.codename1.ui.Tabs)findByName("Tabs", Display.getInstance().getCurrent());
         if(cmp == null && aboutToShowThisContainer != null) {
             cmp = (com.codename1.ui.Tabs)findByName("Tabs", aboutToShowThisContainer);
-        }
-        return cmp;
-    }
-
-    public com.codename1.ui.Container findTab2(Component root) {
-        return (com.codename1.ui.Container)findByName("Tab2", root);
-    }
-
-    public com.codename1.ui.Container findTab2() {
-        com.codename1.ui.Container cmp = (com.codename1.ui.Container)findByName("Tab2", Display.getInstance().getCurrent());
-        if(cmp == null && aboutToShowThisContainer != null) {
-            cmp = (com.codename1.ui.Container)findByName("Tab2", aboutToShowThisContainer);
-        }
-        return cmp;
-    }
-
-    public com.codename1.ui.Container findTab1(Component root) {
-        return (com.codename1.ui.Container)findByName("Tab1", root);
-    }
-
-    public com.codename1.ui.Container findTab1() {
-        com.codename1.ui.Container cmp = (com.codename1.ui.Container)findByName("Tab1", Display.getInstance().getCurrent());
-        if(cmp == null && aboutToShowThisContainer != null) {
-            cmp = (com.codename1.ui.Container)findByName("Tab1", aboutToShowThisContainer);
         }
         return cmp;
     }
@@ -450,18 +398,6 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
-    public com.codename1.ui.Label findMainTab(Component root) {
-        return (com.codename1.ui.Label)findByName("MainTab", root);
-    }
-
-    public com.codename1.ui.Label findMainTab() {
-        com.codename1.ui.Label cmp = (com.codename1.ui.Label)findByName("MainTab", Display.getInstance().getCurrent());
-        if(cmp == null && aboutToShowThisContainer != null) {
-            cmp = (com.codename1.ui.Label)findByName("MainTab", aboutToShowThisContainer);
-        }
-        return cmp;
-    }
-
     public com.codename1.ui.TextField findUsername(Component root) {
         return (com.codename1.ui.TextField)findByName("username", root);
     }
@@ -474,12 +410,23 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
+    public com.codename1.ui.Container findResourcesTab(Component root) {
+        return (com.codename1.ui.Container)findByName("ResourcesTab", root);
+    }
+
+    public com.codename1.ui.Container findResourcesTab() {
+        com.codename1.ui.Container cmp = (com.codename1.ui.Container)findByName("ResourcesTab", Display.getInstance().getCurrent());
+        if(cmp == null && aboutToShowThisContainer != null) {
+            cmp = (com.codename1.ui.Container)findByName("ResourcesTab", aboutToShowThisContainer);
+        }
+        return cmp;
+    }
+
     public static final int COMMAND_LoginPageLogin = 3;
-    public static final int COMMAND_MainSettings = 7;
-    public static final int COMMAND_MainProfile = 6;
-    public static final int COMMAND_MainLogout = 5;
+    public static final int COMMAND_MainSettings = 12;
+    public static final int COMMAND_MainProfile = 11;
+    public static final int COMMAND_MainLogout = 13;
     public static final int COMMAND_SettingsPageBack = 8;
-    public static final int COMMAND_MainGo = 4;
     public static final int COMMAND_ProfilePageBack = 9;
 
     protected boolean onLoginPageLogin() {
@@ -499,10 +446,6 @@ public abstract class StateMachineBase extends UIBuilder {
     }
 
     protected boolean onSettingsPageBack() {
-        return false;
-    }
-
-    protected boolean onMainGo() {
         return false;
     }
 
@@ -547,13 +490,6 @@ public abstract class StateMachineBase extends UIBuilder {
                 }
                 break;
 
-            case COMMAND_MainGo:
-                if(onMainGo()) {
-                    ev.consume();
-                    return;
-                }
-                break;
-
             case COMMAND_ProfilePageBack:
                 if(onProfilePageBack()) {
                     ev.consume();
@@ -592,7 +528,6 @@ public abstract class StateMachineBase extends UIBuilder {
             return;
         }
 
->>>>>>> refs/remotes/origin/login
         if("Main".equals(f.getName())) {
             exitMain(f);
             aboutToShowThisContainer = null;
@@ -622,8 +557,7 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void exitMain(Form f) {
     }
 
-    @Override
-	protected void beforeShow(Form f) {
+    protected void beforeShow(Form f) {
     aboutToShowThisContainer = f;
         if("LoginPage".equals(f.getName())) {
             beforeLoginPage(f);
@@ -678,8 +612,7 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void beforeMain(Form f) {
     }
 
-    @Override
-	protected void beforeShowContainer(Container c) {
+    protected void beforeShowContainer(Container c) {
         aboutToShowThisContainer = c;
         if("LoginPage".equals(c.getName())) {
             beforeContainerLoginPage(c);
@@ -734,10 +667,6 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void beforeContainerMain(Container c) {
     }
 
-<<<<<<< HEAD
-    @Override
-	protected void postShow(Form f) {
-=======
     protected void postShow(Form f) {
         if("LoginPage".equals(f.getName())) {
             postLoginPage(f);
@@ -763,7 +692,6 @@ public abstract class StateMachineBase extends UIBuilder {
             return;
         }
 
->>>>>>> refs/remotes/origin/login
         if("Main".equals(f.getName())) {
             postMain(f);
             aboutToShowThisContainer = null;
@@ -793,10 +721,6 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void postMain(Form f) {
     }
 
-<<<<<<< HEAD
-    @Override
-	protected void postShowContainer(Container c) {
-=======
     protected void postShowContainer(Container c) {
         if("LoginPage".equals(c.getName())) {
             postContainerLoginPage(c);
@@ -822,7 +746,6 @@ public abstract class StateMachineBase extends UIBuilder {
             return;
         }
 
->>>>>>> refs/remotes/origin/login
         if("Main".equals(c.getName())) {
             postContainerMain(c);
             aboutToShowThisContainer = null;
@@ -852,10 +775,6 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void postContainerMain(Container c) {
     }
 
-<<<<<<< HEAD
-    @Override
-	protected void onCreateRoot(String rootName) {
-=======
     protected void onCreateRoot(String rootName) {
         if("LoginPage".equals(rootName)) {
             onCreateLoginPage();
@@ -881,7 +800,6 @@ public abstract class StateMachineBase extends UIBuilder {
             return;
         }
 
->>>>>>> refs/remotes/origin/login
         if("Main".equals(rootName)) {
             onCreateMain();
             aboutToShowThisContainer = null;
@@ -911,8 +829,7 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void onCreateMain() {
     }
 
-    @Override
-	protected Hashtable getFormState(Form f) {
+    protected Hashtable getFormState(Form f) {
         Hashtable h = super.getFormState(f);
         if("LoginPage".equals(f.getName())) {
             getStateLoginPage(f, h);
@@ -967,8 +884,7 @@ public abstract class StateMachineBase extends UIBuilder {
     protected void getStateMain(Form f, Hashtable h) {
     }
 
-    @Override
-	protected void setFormState(Form f, Hashtable state) {
+    protected void setFormState(Form f, Hashtable state) {
         super.setFormState(f, state);
         if("LoginPage".equals(f.getName())) {
             setStateLoginPage(f, state);
@@ -1065,8 +981,8 @@ public abstract class StateMachineBase extends UIBuilder {
             }
         }
         if(rootContainerName.equals("Main")) {
-            if("LaunchLinkButton".equals(c.getName())) {
-                onMain_LaunchLinkButtonAction(c, event);
+            if("LaunchResourceButton".equals(c.getName())) {
+                onMain_LaunchResourceButtonAction(c, event);
                 return;
             }
         }
@@ -1093,7 +1009,7 @@ public abstract class StateMachineBase extends UIBuilder {
       protected void onSettingsPage_MultiButton2Action(Component c, ActionEvent event) {
       }
 
-      protected void onMain_LaunchLinkButtonAction(Component c, ActionEvent event) {
+      protected void onMain_LaunchResourceButtonAction(Component c, ActionEvent event) {
       }
 
 }

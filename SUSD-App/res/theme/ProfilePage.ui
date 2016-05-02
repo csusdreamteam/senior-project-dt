@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <component type="Form" name="ProfilePage" cloudDestinationProperty="ProfilePage" title="Profile" >
+  <component type="Label" name="Label" cloudDestinationProperty="Label" text="Label" >
+  </component>
 <command name="Back" id="9" action="Main" backCommand="true" /></component>
