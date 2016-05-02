@@ -1,4 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <component type="Form" name="Main" cloudDestinationProperty="Main" title="Stockton, Unified!" >
 </component>
+=======
+<component type="Form" name="Main" cloudDestinationProperty="LoginPage" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Stockton Unified!!!" >
+  <component type="Tabs" name="Tabs" cloudDestinationProperty="Tabs" rtl="false" snapToGrid="false" >
+    <layoutConstraint value="Center" />
+    <custom name="titles" type="java.lang.String" array="true" dimensions="1" >
+      <str>Calendar</str>
+      <str>Main</str>
+      <str>Resources</str>
+    </custom>
+    <custom name="icons" type="com.codename1.ui.Image" array="true" dimensions="1" >
+      <str>calendarIcon.png</str>
+      <str>mainIcon.png</str>
+      <str>resourcesIcon.png</str>
+    </custom>
+    <component type="Container" name="Tab1" tabTitle="Calendar" cloudDestinationProperty="Tab1" >
+      <component type="Container" name="CalendarContainer" cloudDestinationProperty="Container" >
+        <component type="Label" name="CalendarTab" cloudDestinationProperty="First Tab" text="Calendar Here" >
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="Tab2" tabTitle="Main" cloudDestinationProperty="Tab2" >
+      <component type="Container" name="MainContainer" cloudDestinationProperty="Container" >
+        <component type="Label" name="MainTab" cloudDestinationProperty="First Tab" text="Main Here (Announcements, Newsletter, etc)" >
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="Tab3" tabTitle="Resources" cloudDestinationProperty="Tab3" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="GenericSpinner" name="ResourcesSpinner" cloudDestinationProperty="GenericSpinner" >
+        <custom name="items" type="java.lang.String" array="true" dimensions="1" >
+          <str>School Directory</str>
+          <str>Corporate Directory</str>
+          <str>Subfinder</str>
+          <str>Go Sign Me Up</str>
+        </custom>
+        <custom name="columns" type="java.lang.Integer" value="1" />
+      </component>
+      <component type="Button" name="LaunchLinkButton" cloudDestinationProperty="LaunchLinkButton" commandName="Go!" commandId="4" commandAction="" commandBack="false" text="Go!" >
+      </component>
+    </component>
+  </component>
+  <component type="Label" name="welcome" cloudDestinationProperty="welcome" text="Welcome Label" >
+    <layoutConstraint value="South" />
+  </component>
+<command name="Logout" id="5" action="LoginPage" backCommand="true" /><command name="Settings" id="7" action="SettingsPage" backCommand="false" /><command name="Profile" id="6" action="ProfilePage" backCommand="false" /></component>
+>>>>>>> refs/remotes/origin/login

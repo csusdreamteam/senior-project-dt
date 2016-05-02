@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="SettingsPage" cloudDestinationProperty="SettingsPage" layout="BoxLayout" boxLayoutAxis="Y" title="Settings" >
+  <component type="MultiButton" name="MultiButton" cloudDestinationProperty="MultiButton" >
+    <custom name="line1" type="java.lang.String" value="Setting Item" />
+    <custom name="line2" type="java.lang.String" value="Descripton" />
+    <custom name="checkBox" type="java.lang.Boolean" value="true" />
+  </component>
+  <component type="MultiButton" name="MultiButton1" cloudDestinationProperty="MultiButton1" >
+    <custom name="line1" type="java.lang.String" value="Other Item" />
+    <custom name="line2" type="java.lang.String" value="Description For Other Item" />
+    <custom name="radioButton" type="java.lang.Boolean" value="true" />
+  </component>
+  <component type="Label" name="Label" cloudDestinationProperty="Label" uiid="TitleLabel" text="Subtitle" >
+  </component>
+  <component type="MultiButton" name="MultiButton2" cloudDestinationProperty="MultiButton2" >
+    <custom name="line1" type="java.lang.String" value="Other Things" />
+    <custom name="line2" type="java.lang.String" value="More Data" />
+    <custom name="checkBox" type="java.lang.Boolean" value="true" />
+  </component>
+<command name="Back" id="8" action="Main" backCommand="true" /></component>

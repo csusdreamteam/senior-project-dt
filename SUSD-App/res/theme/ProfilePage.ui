@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ProfilePage" cloudDestinationProperty="ProfilePage" title="Profile" >
+<command name="Back" id="9" action="Main" backCommand="true" /></component>
