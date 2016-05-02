@@ -8,11 +8,11 @@
   <component type="Container" name="TextContainer" cloudDestinationProperty="TextContainer" layout="TableLayout" tableLayoutRows="2" tableLayoutColumns="2" >
     <component type="Label" name="Label1" cloudDestinationProperty="Label1" text="Username" >
     </component>
-    <component type="TextField" name="TextField1" cloudBoundProperty="text" cloudDestinationProperty="TextField1" text="" >
+    <component type="TextField" name="username" cloudBoundProperty="text" cloudDestinationProperty="TextField1" text="" >
     </component>
     <component type="Label" name="Label2" cloudDestinationProperty="Label2" text="Password" >
     </component>
-    <component type="TextField" name="TextField" cloudBoundProperty="text" cloudDestinationProperty="TextField" text="" >
+    <component type="TextField" name="password" cloudBoundProperty="text" cloudDestinationProperty="TextField" text="" >
     </component>
   </component>
   <component type="Container" name="ButtonContainer" cloudDestinationProperty="ButtonContainer" layout="FlowLayout" flowLayoutFillRows="false" flowLayoutAlign="4" flowLayoutValign="0" >
