@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
+<component type="Form" name="Main" cloudDestinationProperty="Main" title="Stockton, Unified!" >
+</component>
+=======
 <component type="Form" name="Main" cloudDestinationProperty="LoginPage" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Stockton Unified!!!" >
   <component type="Tabs" name="Tabs" cloudDestinationProperty="Tabs" rtl="false" snapToGrid="false" >
     <layoutConstraint value="Center" />
@@ -43,3 +47,4 @@
     <layoutConstraint value="South" />
   </component>
 <command name="Logout" id="5" action="LoginPage" backCommand="true" /><command name="Settings" id="7" action="SettingsPage" backCommand="false" /><command name="Profile" id="6" action="ProfilePage" backCommand="false" /></component>
+>>>>>>> refs/remotes/origin/login

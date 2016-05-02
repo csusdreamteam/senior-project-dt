@@ -66,13 +66,8 @@
 	<target depends="jar" name="compile-test">
         <mkdir dir="${build.test.classes.dir}" />
         <javac destdir="${build.test.classes.dir}" compiler="modern"
-<<<<<<< HEAD
             source="1.8"
             target="1.8"
-=======
-            source="1.7"
-            target="1.7"
->>>>>>> refs/remotes/origin/login
             bootclasspath="CLDC11.jar"        	
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
 	        <src path="${test.src.dir}"/>
@@ -138,26 +133,16 @@
 	        <!-- This is the previous javac task leaving it here in case of a regression with the new javac tasks
 	        
 	         javac destdir="build/tmp" compiler="extJavac" executable="${javacPath}"
-<<<<<<< HEAD
-	            source="1.8"
-	            target="1.8" 
-=======
-	            source="1.7"
-	            target="1.7" 
->>>>>>> refs/remotes/origin/login
+	            source="1.5"
+	            target="1.5" 
 	            bootclasspath="lib/CLDC11.jar"
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
 	            <src path="src"/>
 	        </javac-->
 	        
 	        <javac destdir="build/tmp" compiler="modern"
-<<<<<<< HEAD
 	            source="1.8"
 	            target="1.8" 
-=======
-	            source="1.7"
-	            target="1.7" 
->>>>>>> refs/remotes/origin/login
 	            bootclasspath="lib/CLDC11.jar"
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
 	            <src path="src"/>
@@ -180,13 +165,8 @@
 	        <mkdir dir="native/javase" />
 	        <mkdir dir="native/internal_tmp" />
 	        <javac destdir="native/internal_tmp" compiler="modern"
-<<<<<<< HEAD
 	            source="1.8"
 	            target="1.8"
-=======
-	            source="1.7"
-	            target="1.7"
->>>>>>> refs/remotes/origin/login
 	            bootclasspath="lib/CLDC11.jar"
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls:build/tmp">
 	            <src path="native/javase"/>
