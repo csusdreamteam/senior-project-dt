@@ -3,29 +3,20 @@
 
 <!-- IMPORTANT!!! When building for ios: if you don't supply the certificate/provisioning profile etc. you will not 
     be able to run on a regular device (only on jailbroken devices) in that case your package name MUST be: com.codename1.demos.lwuitdemo
-
     Required attributes for the task:
-
     jarFile - the application jar file resulting from the build
-
     displayName - display name for the application in the UI
-
     Either packageName and mainClassName or fullClassName:
     mainClassName - the name of the main class not including the package name
-
     packageName - the package in which the main class resides, this will also 
     be used to classify the application. It is recommended you give this some thought since
     package names are impossible to change later on some stores!
-
     fullClassName - combination of packageName.mainClassName
-
     icon - a 512x512 pixel icon in PNG format, it will be adjusted for the proper resolutions. 
     Notice that this icon SHOULDN'T include the iphone tint effect since that effect is overlayed 
     by the iphone build process
-
     targetType - the device target, one of the following: iphone, android, rim, me (for j2me support), 
     win (for Windows Phone 7 support - pending)
-
     vendor - the vendor name
     
     Optional attributes for iphone development these are REQUIRED if you want to distribute an application for
@@ -33,15 +24,10 @@
     certificate - optional for the iPhone project, the p12 certificate file for signing
     certPassword - required if the certificate is specified
     ProvisioningProfile - if the certificate is specified a mobile_provisioning file received from Apple must be supplied too
-
     userName - login information from codenameone.com
-
     password - the password matching your login from codenameone.com
-
     subtitle - iphone secondary title
-
     version - the version number for the application as a floating point value
-
     -->
 
 <project name="SUSD-App" basedir=".">
@@ -66,13 +52,8 @@
 	<target depends="jar" name="compile-test">
         <mkdir dir="${build.test.classes.dir}" />
         <javac destdir="${build.test.classes.dir}" compiler="modern"
-<<<<<<< HEAD
             source="1.8"
             target="1.8"
-=======
-            source="1.7"
-            target="1.7"
->>>>>>> refs/remotes/origin/login
             bootclasspath="CLDC11.jar"        	
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
 	        <src path="${test.src.dir}"/>
@@ -138,30 +119,14 @@
 	        <!-- This is the previous javac task leaving it here in case of a regression with the new javac tasks
 	        
 	         javac destdir="build/tmp" compiler="extJavac" executable="${javacPath}"
-<<<<<<< HEAD
 	            source="1.8"
 	            target="1.8" 
-=======
-	            source="1.7"
-	            target="1.7" 
->>>>>>> refs/remotes/origin/login
 	            bootclasspath="lib/CLDC11.jar"
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
 	            <src path="src"/>
 	        </javac-->
 	        
-	        <javac destdir="build/tmp" compiler="modern"
-<<<<<<< HEAD
-	            source="1.8"
-	            target="1.8" 
-=======
-	            source="1.7"
-	            target="1.7" 
->>>>>>> refs/remotes/origin/login
-	            bootclasspath="lib/CLDC11.jar"
-				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls">
-	            <src path="src"/>
-	        </javac>
+	        
 	        <copy todir="build/tmp">
 	            <fileset dir="${build.classes.dir}" excludes="**/*.class, **/*.ovr"/> 
 	        </copy>
@@ -180,13 +145,8 @@
 	        <mkdir dir="native/javase" />
 	        <mkdir dir="native/internal_tmp" />
 	        <javac destdir="native/internal_tmp" compiler="modern"
-<<<<<<< HEAD
 	            source="1.8"
 	            target="1.8"
-=======
-	            source="1.7"
-	            target="1.7"
->>>>>>> refs/remotes/origin/login
 	            bootclasspath="lib/CLDC11.jar"
 				classpath="lib/CodenameOne.jar:${build.classes.dir}:lib/impl/cls:build/tmp">
 	            <src path="native/javase"/>

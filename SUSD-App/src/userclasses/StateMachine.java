@@ -5,7 +5,11 @@
 package userclasses;
 
 import generated.StateMachineBase;
-import com.codename1.ui.util.Resources;
+import com.codename1.ui.*;
+import com.codename1.ui.events.*;
+import com.codename1.ui.util.*;
+import com.codename1.ui.plaf.*;
+import java.util.Hashtable;
 
 /**
  *
@@ -30,14 +34,9 @@ public class StateMachine extends StateMachineBase {
 	}
 
     @Override
-    protected void postMain(Form f) {
-    
-    }
-
-    @Override
     protected void beforeMain(Form f) {
     	findWelcome(f).setText("Welcome, "+username+"!");
-    	findTabs().setSelectedIndex(1);
+    	findTabs(f).setSelectedIndex(1);
     }
 
     @Override
@@ -47,24 +46,10 @@ public class StateMachine extends StateMachineBase {
     }
 
     @Override
-    protected void onLoginPage_UsernameAction(Component c, ActionEvent event) {
-    	//Verify username and password and go to main
-    	showForm("Main", null);
-    
-    }
-    
-    @Override
-    protected void onLoginPage_PasswordAction(Component c, ActionEvent event) {
-    	//Verify username and password and go to main
-    	showForm("Main", null);
-    
-    }
-
-    @Override
-    protected void onMain_LaunchLinkButtonAction(Component c, ActionEvent event) {
+    protected void onMain_LaunchResourceButtonAction(Component c, ActionEvent event) {
     	String val = (String)findResourcesSpinner().getValue();
     	System.out.println(val+" was chosen.");
-    	Dialog.show("You have chosen:", val,"OK" , null);
+    	Dialog.show("You have chosen:", val,"Okay" , null);
     	
     
     }
