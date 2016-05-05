@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <component type="Form" name="Main" cloudDestinationProperty="Main" title="Stockton, Unified!" >
   <component type="Button" name="Button" cloudDestinationProperty="Button" text="Button" >
   </component>
@@ -8,6 +9,8 @@
   </component>
 </component>
 =======
+=======
+>>>>>>> master
 <component type="Form" name="Main" cloudDestinationProperty="Main" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Stockton, Unified!" >
   <component type="Label" name="welcome" cloudDestinationProperty="welcome" text="welcome label" >
     <layoutConstraint value="South" />
@@ -46,4 +49,7 @@
     </component>
   </component>
 <command name="Logout" id="13" action="LoginPage" backCommand="true" /><command name="Settings" id="12" action="SettingsPage" backCommand="false" /><command name="Profile" id="11" action="ProfilePage" backCommand="false" /></component>
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
