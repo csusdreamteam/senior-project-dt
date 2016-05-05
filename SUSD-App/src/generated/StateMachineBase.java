@@ -34,6 +34,7 @@ public abstract class StateMachineBase extends UIBuilder {
     public Container startApp(Resources res, String resPath, boolean loadTheme) {
         initVars();
         UIBuilder.registerCustomComponent("Form", com.codename1.ui.Form.class);
+        UIBuilder.registerCustomComponent("Button", com.codename1.ui.Button.class);
         if(loadTheme) {
             if(res == null) {
                 try {
@@ -69,6 +70,7 @@ public abstract class StateMachineBase extends UIBuilder {
     public Container createWidget(Resources res, String resPath, boolean loadTheme) {
         initVars();
         UIBuilder.registerCustomComponent("Form", com.codename1.ui.Form.class);
+        UIBuilder.registerCustomComponent("Button", com.codename1.ui.Button.class);
         if(loadTheme) {
             if(res == null) {
                 try {
@@ -104,6 +106,30 @@ public abstract class StateMachineBase extends UIBuilder {
 
     public StateMachineBase(Resources res, boolean loadTheme) {
         this(res, null, loadTheme);
+    }
+
+    public com.codename1.ui.Button findButton1(Component root) {
+        return (com.codename1.ui.Button)findByName("Button1", root);
+    }
+
+    public com.codename1.ui.Button findButton1() {
+        com.codename1.ui.Button cmp = (com.codename1.ui.Button)findByName("Button1", Display.getInstance().getCurrent());
+        if(cmp == null && aboutToShowThisContainer != null) {
+            cmp = (com.codename1.ui.Button)findByName("Button1", aboutToShowThisContainer);
+        }
+        return cmp;
+    }
+
+    public com.codename1.ui.Button findButton(Component root) {
+        return (com.codename1.ui.Button)findByName("Button", root);
+    }
+
+    public com.codename1.ui.Button findButton() {
+        com.codename1.ui.Button cmp = (com.codename1.ui.Button)findByName("Button", Display.getInstance().getCurrent());
+        if(cmp == null && aboutToShowThisContainer != null) {
+            cmp = (com.codename1.ui.Button)findByName("Button", aboutToShowThisContainer);
+        }
+        return cmp;
     }
 
     protected void exitForm(Form f) {
@@ -221,5 +247,32 @@ public abstract class StateMachineBase extends UIBuilder {
 
     protected void setStateMain(Form f, Hashtable state) {
     }
+
+    protected void handleComponentAction(Component c, ActionEvent event) {
+        Container rootContainerAncestor = getRootAncestor(c);
+        if(rootContainerAncestor == null) return;
+        String rootContainerName = rootContainerAncestor.getName();
+        Container leadParentContainer = c.getParent().getLeadParent();
+        if(leadParentContainer != null && leadParentContainer.getClass() != Container.class) {
+            c = c.getParent().getLeadParent();
+        }
+        if(rootContainerName == null) return;
+        if(rootContainerName.equals("Main")) {
+            if("Button".equals(c.getName())) {
+                onMain_ButtonAction(c, event);
+                return;
+            }
+            if("Button1".equals(c.getName())) {
+                onMain_Button1Action(c, event);
+                return;
+            }
+        }
+    }
+
+      protected void onMain_ButtonAction(Component c, ActionEvent event) {
+      }
+
+      protected void onMain_Button1Action(Component c, ActionEvent event) {
+      }
 
 }
