@@ -31,6 +31,7 @@
           <str>Corporate Directory</str>
           <str>Go Sign Me Up</str>
           <str>Sub Finder</str>
+          <str>Site Map</str>
         </custom>
       </component>
       <component type="Button" name="LaunchResourceButton" cloudDestinationProperty="LaunchResourceButton" text="Go!" >
