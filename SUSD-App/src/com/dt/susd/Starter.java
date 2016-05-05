@@ -1,9 +1,6 @@
 package com.dt.susd;
 
 
-import com.codename1.io.Log;
-import com.codename1.ui.events.ActionEvent;
-import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
 import userclasses.StateMachine;
@@ -20,6 +17,7 @@ public class Starter {
     public void start() {
         if(current != null){
             current.show();
+            System.out.println("HA");
             return;
         }
         new StateMachine("/theme");        
