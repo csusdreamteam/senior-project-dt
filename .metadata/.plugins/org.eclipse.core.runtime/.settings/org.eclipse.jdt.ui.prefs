@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+command=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/bin/javadoc
+>>>>>>> master
 =======
 command=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/bin/javadoc
 >>>>>>> master
