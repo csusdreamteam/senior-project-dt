@@ -26,6 +26,7 @@ public class Starter {
     public void start() {
         if(current != null){
             current.show();
+            System.out.println("HA");
             return;
         }
         new StateMachine("/theme");        

@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <component type="Form" name="Main" cloudDestinationProperty="Main" title="Stockton, Unified!" >
+=======
+<component type="Form" name="Main" cloudDestinationProperty="LoginPage" title="Stockton Unified!!!" >
+  <component type="Button" name="Button" cloudDestinationProperty="Button" commandName="Button" commandId="1" commandAction="LoginPage" commandBack="false" text="Button" >
+  </component>
+  <component type="TextArea" name="TextArea" cloudBoundProperty="text" cloudDestinationProperty="TextArea" text="TextArea" >
+  </component>
+>>>>>>> login
 </component>
