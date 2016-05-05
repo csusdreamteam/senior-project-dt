@@ -1,12 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <component type="Form" name="Main" cloudDestinationProperty="Main" title="Stockton, Unified!" >
 =======
 <component type="Form" name="Main" cloudDestinationProperty="LoginPage" title="Stockton Unified!!!" >
   <component type="Button" name="Button" cloudDestinationProperty="Button" commandName="Button" commandId="1" commandAction="LoginPage" commandBack="false" text="Button" >
+=======
+<component type="Form" name="Main" cloudDestinationProperty="Main" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Stockton, Unified!" >
+  <component type="Label" name="welcome" cloudDestinationProperty="welcome" text="welcome label" >
+    <layoutConstraint value="South" />
+>>>>>>> master
   </component>
-  <component type="TextArea" name="TextArea" cloudBoundProperty="text" cloudDestinationProperty="TextArea" text="TextArea" >
+  <component type="Tabs" name="Tabs" cloudDestinationProperty="Tabs" >
+    <layoutConstraint value="Center" />
+    <custom name="titles" type="java.lang.String" array="true" dimensions="1" >
+      <str>Calendar</str>
+      <str>Home</str>
+      <str>Resources</str>
+    </custom>
+    <custom name="icons" type="com.codename1.ui.Image" array="true" dimensions="1" >
+      <str>calendarIcon.png</str>
+      <str>mainIcon.png</str>
+      <str>resourcesIcon.png</str>
+    </custom>
+    <component type="Container" name="CalendarTab" tabTitle="Calendar" cloudDestinationProperty="CalendarTab" >
+      <component type="Label" name="Label" cloudDestinationProperty="Label" text="Calendar Here" >
+      </component>
+    </component>
+    <component type="Container" name="HomeTab" tabTitle="Home" cloudDestinationProperty="HomeTab" >
+      <component type="Label" name="Label1" cloudDestinationProperty="Label1" text="Announcements, Newsletter, etc" >
+      </component>
+    </component>
+    <component type="Container" name="ResourcesTab" tabTitle="Resources" cloudDestinationProperty="ResourcesTab" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="GenericSpinner" name="ResourcesSpinner" cloudDestinationProperty="GenericSpinner" >
+        <custom name="items" type="java.lang.String" array="true" dimensions="1" >
+          <str>School Directory</str>
+          <str>Corporate Directory</str>
+          <str>Go Sign Me Up</str>
+          <str>Sub Finder</str>
+        </custom>
+      </component>
+      <component type="Button" name="LaunchResourceButton" cloudDestinationProperty="LaunchResourceButton" text="Go!" >
+      </component>
+    </component>
   </component>
+<<<<<<< HEAD
 >>>>>>> login
 </component>
+=======
+<command name="Logout" id="13" action="LoginPage" backCommand="true" /><command name="Settings" id="12" action="SettingsPage" backCommand="false" /><command name="Profile" id="11" action="ProfilePage" backCommand="false" /></component>
+>>>>>>> master
