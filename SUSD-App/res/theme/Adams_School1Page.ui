@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Adams_School1Page" cloudDestinationProperty="Adams_School1Page" tensileDragEnabled="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Adams" >
+  <component type="Button" name="Button" cloudDestinationProperty="Button" commandName="Back" commandIcon="cal_left_arrow.png" commandId="25" commandAction="SchoolDirectory" commandBack="true" text="Back" icon="cal_left_arrow.png" >
+    <layoutConstraint value="North" />
+  </component>
+  <component type="Container" name="Container" cloudDestinationProperty="Container" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="1" >
+    <layoutConstraint value="Center" />
+    <component type="MultiList" name="MultiList" cloudDestinationProperty="MultiList" >
+      <mapItems>
+        <stringItem key="Line2" value=" Sharon Womble" />
+        <stringItem key="Line1" value="Principal" />
+      </mapItems>
+      <mapItems>
+        <stringItem key="Line4" value=" Ext. 2729 (Ana) " />
+        <stringItem key="Line3" value=" Ext. 2722" />
+        <stringItem key="Line2" value=" Reyes Gauna " />
+        <stringItem key="Line1" value="Director" />
+      </mapItems>
+      <mapItems>
+        <stringItem key="Line2" value=" Nicol Alvarado" />
+        <stringItem key="Line1" value="Assistant Principal/ Program Manager" />
+      </mapItems>
+      <mapItems>
+        <stringItem key="Key0" value="" />
+        <stringItem key="Line4" value="" />
+        <stringItem key="icon" value="" />
+        <stringItem key="Line3" value="" />
+        <stringItem key="Line2" value=" Angela Lynch" />
+        <stringItem key="Line1" value="Administrative Assistant/ H.S. Secretary " />
+        <stringItem key="emblem" value="" />
+      </mapItems>
+      <mapItems>
+        <stringItem key="Line4" value="" />
+        <stringItem key="Line3" value="" />
+        <stringItem key="icon" value="" />
+        <stringItem key="Line2" value=" Ext. 4000" />
+        <stringItem key="Line1" value="SST/H.S. Secretary/ Registrar" />
+        <stringItem key="emblem" value="" />
+        <stringItem key="Key5" value="" />
+      </mapItems>
+    </component>
+  </component>
+<command name="Back" icon="cal_left_arrow.png" id="25" action="SchoolDirectory" backCommand="false" /><command name="Back" icon="cal_left_arrow.png" id="25" action="SchoolDirectory" backCommand="true" /><command name="" id="24" action="SchoolDirectory" backCommand="false" /></component>

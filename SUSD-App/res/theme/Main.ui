@@ -17,11 +17,16 @@
       <str>resourcesIcon.png</str>
     </custom>
     <component type="Container" name="CalendarTab" tabTitle="Calendar" cloudDestinationProperty="CalendarTab" >
-      <component type="Label" name="Label" cloudDestinationProperty="Label" text="Calendar Here" >
+      <component type="Container" name="Container" cloudDestinationProperty="Container" scrollableY="true" layout="BoxLayout" boxLayoutAxis="Y" >
+      </component>
+      <component type="ComponentGroup" name="ComponentGroup" cloudDestinationProperty="ComponentGroup" flatten="true" scrollableY="true" >
+        <component type="Calendar" name="Calendar" cloudDestinationProperty="Calendar" flatten="true" >
+        </component>
+        <custom name="horizontal" type="java.lang.Boolean" value="false" />
       </component>
     </component>
     <component type="Container" name="HomeTab" tabTitle="Home" cloudDestinationProperty="HomeTab" >
-      <component type="Label" name="Label1" cloudDestinationProperty="Label1" text="Announcements, Newsletter, etc" >
+      <component type="ContainerList" name="ContainerList" cloudDestinationProperty="ContainerList" >
       </component>
     </component>
     <component type="Container" name="ResourcesTab" tabTitle="Resources" cloudDestinationProperty="ResourcesTab" layout="BoxLayout" boxLayoutAxis="Y" >
@@ -33,8 +38,12 @@
           <str>Sub Finder</str>
         </custom>
       </component>
-      <component type="Button" name="LaunchResourceButton" cloudDestinationProperty="LaunchResourceButton" text="Go!" >
+      <component type="Button" name="LaunchResourceButton" cloudDestinationProperty="LaunchResourceButton" commandName="Go!" commandId="14" commandAction="SchoolDirectory" commandBack="true" flatten="false" text="Go!" >
       </component>
     </component>
   </component>
-<command name="Logout" id="13" action="LoginPage" backCommand="true" /><command name="Settings" id="12" action="SettingsPage" backCommand="false" /><command name="Profile" id="11" action="ProfilePage" backCommand="false" /></component>
+  <component type="ComponentGroup" name="ComponentGroup1" cloudDestinationProperty="ComponentGroup1" scrollableX="true" >
+    <layoutConstraint value="West" />
+    <custom name="horizontal" type="java.lang.Boolean" value="false" />
+  </component>
+<command name="Go!" id="14" action="SchoolDirectory" backCommand="false" /><command name="Go!" id="14" action="SchoolDirectory" backCommand="true" /><command name="Go!" id="14" action="SchoolDirectory" backCommand="false" /><command name="Logout" id="13" action="LoginPage" backCommand="false" /><command name="Settings" id="12" action="SettingsPage" backCommand="false" /><command name="Profile" id="11" action="ProfilePage" backCommand="false" /></component>

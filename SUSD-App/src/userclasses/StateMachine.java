@@ -10,6 +10,7 @@ import com.codename1.ui.events.*;
 import com.codename1.ui.util.*;
 import com.codename1.ui.plaf.*;
 import java.util.Hashtable;
+import java.util.Vector;
 
 /**
  *
@@ -49,8 +50,34 @@ public class StateMachine extends StateMachineBase {
     protected void onMain_LaunchResourceButtonAction(Component c, ActionEvent event) {
     	String val = (String)findResourcesSpinner().getValue();
     	System.out.println(val+" was chosen.");
-    	Dialog.show("You have chosen:", val,"Okay" , null);
+    	//Dialog.show("You have chosen:", val,"Okay" , null);
     	
+    	
+    		
+    	
+    
+    }
+
+    @Override
+    protected void onCreateMain() {
+    
+    }
+
+    @Override
+    protected void postMain(Form f) {
+    
+    }
+
+    @Override
+    protected void exitMain(Form f) {
+    
+    }
+
+
+  
+
+    @Override
+    protected void onCreateSchoolDirectory() {
     
     }
 }

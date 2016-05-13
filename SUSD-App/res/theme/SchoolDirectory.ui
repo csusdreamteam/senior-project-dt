@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="SchoolDirectory" cloudDestinationProperty="SchoolDirectory" scrollableY="true" layout="BoxLayout" boxLayoutAxis="Y" title="SCHOOL DIRECTORY" >
+  <component type="Button" name="Button" cloudDestinationProperty="Button" commandName=" Back" commandIcon="cal_left_arrow.png" commandId="15" commandAction="Main" commandBack="false" flatten="false" text=" Back" icon="cal_left_arrow.png" verticalAlignment="4" textPosition="3" >
+  </component>
+  <component type="Container" name="Container1" cloudDestinationProperty="Container1" uiid="List" scrollableY="false" layout="BoxLayout" boxLayoutAxis="Y" >
+  </component>
+  <component type="Label" name="Label" cloudDestinationProperty="Label" flatten="false" text="   School  " textPosition="1" >
+  </component>
+  <component type="MultiButton" name="Adams          Sharon Womble      " cloudDestinationProperty="Adams          Sharon Womble      " commandName="" commandId="20" commandAction="Adams_School1Page" commandBack="true" >
+    <custom name="line1" type="java.lang.String" value="Adams     " />
+    <custom name="line2" type="java.lang.String" value="6402 Inglewood Ave." />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7155, Ext. 4020" />
+    <custom name="line4" type="java.lang.String" value="Fax No. 952-9208" />
+  </component>
+  <component type="MultiButton" name="August" cloudDestinationProperty="August" >
+    <custom name="line1" type="java.lang.String" value="August            " />
+    <custom name="line2" type="java.lang.String" value="2101 Sutro Ave. 95205" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7160, Ext. 4100 " />
+    <custom name="line4" type="java.lang.String" value="Fax No. 463-1179" />
+  </component>
+  <component type="MultiButton" name="Cesar Chavez H.S." cloudDestinationProperty="Cesar Chavez H.S." >
+    <custom name="line1" type="java.lang.String" value="Cesar Chavez H.S." />
+    <custom name="line2" type="java.lang.String" value="2929 Windflower Lane 95212" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7480, Ext. 8756 " />
+    <custom name="line4" type="java.lang.String" value="Fax No. 475-9097" />
+  </component>
+  <component type="MultiButton" name="Bush" cloudDestinationProperty="Bush" >
+    <custom name="line1" type="java.lang.String" value="Bush" />
+    <custom name="line2" type="java.lang.String" value="5420 Fred Russo Dr. 95212" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7350, Ext. 1951 " />
+    <custom name="line4" type="java.lang.String" value="Fax No. 473-9792 " />
+  </component>
+  <component type="MultiButton" name="Clevland" cloudDestinationProperty="Clevland" >
+    <custom name="line1" type="java.lang.String" value="Clevland" />
+    <custom name="line2" type="java.lang.String" value="20 E. Fulton St. 95204" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7165, Ext. 4200" />
+    <custom name="line4" type="java.lang.String" value="Fax No. 943-6592" />
+  </component>
+  <component type="MultiButton" name="Commodore Stockton Skills" cloudDestinationProperty="Commodore Stockton Skills" >
+    <custom name="line1" type="java.lang.String" value="Commodore Stockton Skills" />
+    <custom name="line2" type="java.lang.String" value="2725 Michigan Ave. 95204" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7170, Ext. 4302" />
+  </component>
+  <component type="MultiButton" name="Edison HS " cloudDestinationProperty="Edison HS " >
+    <custom name="line1" type="java.lang.String" value="Edison HS " />
+    <custom name="line2" type="java.lang.String" value="100 W. Dr. Martin Luther King, Jr. Blvd. 95206" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7425, Ext. 8100" />
+  </component>
+  <component type="MultiButton" name="El Dorado" cloudDestinationProperty="El Dorado" >
+    <custom name="line1" type="java.lang.String" value="El Dorado" />
+    <custom name="line2" type="java.lang.String" value="1540 N. Lincoln St. 95204" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7175, Ext. 4404" />
+    <custom name="name1" type="java.lang.String" value="" />
+    <custom name="name2" type="java.lang.String" value="" />
+    <custom name="name3" type="java.lang.String" value="Phone No. 933-7175, Ext. 4404" />
+  </component>
+  <component type="MultiButton" name="Elmwood " cloudDestinationProperty="Elmwood " >
+    <custom name="line1" type="java.lang.String" value="Elmwood " />
+    <custom name="line2" type="java.lang.String" value="840 S. Cardinal Ave. 95215" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7180, Ext. 4501" />
+  </component>
+  <component type="MultiButton" name="Fillmore " cloudDestinationProperty="Fillmore " >
+    <custom name="line1" type="java.lang.String" value="Fillmore " />
+    <custom name="line2" type="java.lang.String" value="2644 E. Poplar St. 95205" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7185, Ext. 4602 " />
+    <custom name="line4" type="java.lang.String" value="Fax No. 467-3672 " />
+  </component>
+  <component type="MultiButton" name="Franklin HS" cloudDestinationProperty="Franklin HS" >
+    <custom name="line1" type="java.lang.String" value="Franklin HS" />
+    <custom name="line2" type="java.lang.String" value="4600 E. Fremont St. 95215 " />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7435, Ext. 8206 " />
+  </component>
+  <component type="MultiButton" name="Grunsky" cloudDestinationProperty="Grunsky" >
+    <custom name="line1" type="java.lang.String" value="Grunsky" />
+    <custom name="line2" type="java.lang.String" value="1550 N. School Ave. 95205" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7200, Ext. 4802" />
+  </component>
+  <component type="MultiButton" name="Hamilton/Fong IB Program" cloudDestinationProperty="Hamilton/Fong IB Program" >
+    <custom name="line1" type="java.lang.String" value="Hamilton/Fong IB Program" />
+    <custom name="line2" type="java.lang.String" value="2245 E. Eleventh Street 95206" />
+    <custom name="line3" type="java.lang.String" value="Phone No. 933-7395, Ext. 1660" />
+  </component>
+<command name="" id="20" action="Adams_School1Page" backCommand="false" /><command name="" id="20" action="Adams_School1Page" backCommand="true" /><command name="" id="20" action="Adams_School1Page" backCommand="false" /><command name="" id="23" action="$Back" backCommand="false" /></component>

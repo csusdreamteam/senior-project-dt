@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <component type="Form" name="LoginPage" cloudDestinationProperty="LoginPage" layout="BoxLayout" boxLayoutAxis="Y" >
-  <component type="Container" name="ImageContainter" cloudDestinationProperty="ImageContainter" layout="FlowLayout" flowLayoutFillRows="true" flowLayoutAlign="4" flowLayoutValign="0" >
+  <component type="Container" name="ImageContainter" cloudDestinationProperty="ImageContainter" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="1" >
     <component type="Label" name="Label" cloudDestinationProperty="Label" text="l" icon="susdLogo.png" >
     </component>
   </component>

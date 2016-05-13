@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <resource majorVersion="1" minorVersion="7" useXmlUI="false">
+    <image name="2016 Pentathlon Rio - 3.jpg" type="multi"  />
+    <ui name="Adams_School1Page" />
     <image name="back-command.png" type="multi"  />
     <image name="border.png"  />
     <image name="cal_left_arrow.png" type="multi"  />
@@ -35,6 +37,7 @@
     <image name="Dialog.borderTop_1.png" type="multi"  />
     <image name="Dialog.borderTopL_1.png" type="multi"  />
     <image name="Dialog.borderTopR_1.png" type="multi"  />
+    <legacyFont name="Font 1" />
     <ui name="LoginPage" />
     <ui name="Main" />
     <image name="mainIcon.png"  />
@@ -51,6 +54,7 @@
     <image name="OKGR.borderTopR_1.png" type="multi"  />
     <ui name="ProfilePage" />
     <image name="resourcesIcon.png"  />
+    <ui name="SchoolDirectory" />
     <ui name="SettingsPage" />
     <image name="sliderBlueCenter.png" type="multi"  />
     <image name="sliderBlueLeft.png" type="multi"  />
@@ -129,9 +133,9 @@
         <val key="BackCommand.sel#padding" value="1,1,4,4" />
         <val key="BackCommand.sel#transparency" value="0" />
         <val key="BackCommand.transparency" value="0" />
-        <val key="Button.align" value="4" />
-        <gradient key="Button.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
-        <val key="Button.bgType" value="0" />
+        <val key="Button.align" value="1" />
+        <val key="Button.bgImage" value="2016 Pentathlon Rio - 3.jpg" />
+        <val key="Button.bgType" value="27" />
         <border key="Button.border" type="image" i1="OKGR.borderTop_1.png" i2="OKGR.borderBottom_1.png" i3="OKGR.borderLeft_1.png" i4="OKGR.borderRight_1.png" i5="OKGR.borderTopL_1.png" i6="OKGR.borderTopR_1.png" i7="OKGR.borderBottomL_1.png" i8="OKGR.borderBottomR_1.png" i9="OKGR.borderCenter_1.png" />
         <val key="Button.fgColor" value="ffffff" />
         <font key="Button.font" type="ttf" face="0" style="0" size="0" name="native:MainThin" family="native:MainThin" sizeSettings="1" actualSize="12.0" />
@@ -329,6 +333,7 @@
         <val key="CommandList.sel#padding" value="0,0,0,0" />
         <val key="CommandList.sel#transparency" value="0" />
         <val key="CommandList.transparency" value="0" />
+        <val key="Container.align" value="4" />
         <gradient key="Container.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
         <val key="Container.bgType" value="0" />
         <val key="Container.press#derive" value="Container" />
@@ -412,8 +417,10 @@
         <val key="Form.transparency" value="255" />
         <val key="ImageViewer.margin" value="0,0,0,0" />
         <val key="ImageViewer.padding" value="0,0,0,0" />
+        <val key="Label.align" value="4" />
+        <val key="Label.bgColor" value="cccccc" />
         <val key="Label.fgColor" value="0" />
-        <font key="Label.font" type="ttf" face="0" style="0" size="0" name="native:MainThin" family="native:MainThin" sizeSettings="1" actualSize="12.0" />
+        <font key="Label.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="1" actualSize="12.0" />
         <border key="Label.press#border" type="empty" />
         <val key="Label.press#fgColor" value="ffffff" />
         <font key="Label.press#font" type="ttf" face="0" style="0" size="0" name="native:MainThin" family="native:MainThin" sizeSettings="1" actualSize="12.0" />
@@ -478,8 +485,11 @@
         <val key="MenuButton.transparency" value="0" />
         <val key="MonthView.margin" value="0,0,0,0" />
         <val key="MonthView.padding" value="0,0,0,0" />
+        <font key="MultiButton.font" type="system" face="0" style="0" size="0" />
         <val key="MultiButton.press#transparency" value="0" />
+        <font key="MultiButton.sel#font" type="system" face="0" style="1" size="16" />
         <val key="MultiButton.sel#transparency" value="0" />
+        <val key="MultiButton.textDecoration" value="0" />
         <val key="MultiButton.transparency" value="0" />
         <val key="MultiLine1.fgColor" value="0" />
         <font key="MultiLine1.font" type="ttf" face="0" style="1" size="16" name="native:MainLight" family="native:MainLight" sizeSettings="2" actualSize="12.0" />
@@ -672,6 +682,7 @@
         <gradient key="TextArea.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
         <val key="TextArea.bgType" value="0" />
         <border key="TextArea.border" type="empty" />
+        <font key="TextArea.dis#font" type="system" face="0" style="1" size="16" />
         <val key="TextArea.fgColor" value="ffffff" />
         <val key="TextArea.transparency" value="0" />
         <gradient key="TextField.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
@@ -743,6 +754,7 @@
         <border key="sel#border" type="empty" />
         <val key="transparency" value="0" />
     </theme>
+    <image name="Timeline 1" type="timeline"  />
     <image name="TitleArea.borderBottom_2.png" type="multi"  />
     <image name="TitleArea.borderBottomL_2.png" type="multi"  />
     <image name="TitleArea.borderBottomR_2.png" type="multi"  />
