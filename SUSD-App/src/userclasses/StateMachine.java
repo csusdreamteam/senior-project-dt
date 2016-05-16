@@ -35,8 +35,8 @@ public class StateMachine extends StateMachineBase {
 
     @Override
     protected void beforeMain(Form f) {
-    	findWelcome(f).setText("Welcome, "+username+"!");
-    	findTabs(f).setSelectedIndex(1);
+    	//findWelcome(f).setText("Welcome, "+username+"!");
+    	//findTabs(f).setSelectedIndex(1);
     }
 
     @Override
@@ -45,10 +45,10 @@ public class StateMachine extends StateMachineBase {
     	username = findUsername(f).getText();
     }
 
-    @Override
     protected void onMain_LaunchResourceButtonAction(Component c, ActionEvent event) {
-    	String val = (String)findResourcesSpinner().getValue();
-    	System.out.println(val+" was chosen.");
+    	//String val = (String)findResourcesSpinner().getValue();
+    	String val = "TEST";
+        System.out.println(val+" was chosen.");
     	Dialog.show("You have chosen:", val,"Okay" , null);
     	
     

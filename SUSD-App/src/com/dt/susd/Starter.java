@@ -1,14 +1,5 @@
 package com.dt.susd;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-import com.codename1.io.Log;
-import com.codename1.ui.events.ActionEvent;
-import com.codename1.ui.events.ActionListener;
-=======
->>>>>>> master
-=======
->>>>>>> master
 
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
