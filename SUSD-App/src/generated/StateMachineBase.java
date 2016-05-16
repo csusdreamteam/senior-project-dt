@@ -36,12 +36,15 @@ public abstract class StateMachineBase extends UIBuilder {
         UIBuilder.registerCustomComponent("Container", com.codename1.ui.Container.class);
         UIBuilder.registerCustomComponent("Form", com.codename1.ui.Form.class);
         UIBuilder.registerCustomComponent("Button", com.codename1.ui.Button.class);
+<<<<<<< HEAD
         UIBuilder.registerCustomComponent("InfiniteProgress", com.codename1.components.InfiniteProgress.class);
         UIBuilder.registerCustomComponent("Label", com.codename1.ui.Label.class);
         UIBuilder.registerCustomComponent("TextField", com.codename1.ui.TextField.class);
         UIBuilder.registerCustomComponent("Tabs", com.codename1.ui.Tabs.class);
         UIBuilder.registerCustomComponent("MultiButton", com.codename1.components.MultiButton.class);
         UIBuilder.registerCustomComponent("GenericSpinner", com.codename1.ui.spinner.GenericSpinner.class);
+=======
+>>>>>>> directory
         if(loadTheme) {
             if(res == null) {
                 try {
@@ -79,12 +82,15 @@ public abstract class StateMachineBase extends UIBuilder {
         UIBuilder.registerCustomComponent("Container", com.codename1.ui.Container.class);
         UIBuilder.registerCustomComponent("Form", com.codename1.ui.Form.class);
         UIBuilder.registerCustomComponent("Button", com.codename1.ui.Button.class);
+<<<<<<< HEAD
         UIBuilder.registerCustomComponent("InfiniteProgress", com.codename1.components.InfiniteProgress.class);
         UIBuilder.registerCustomComponent("Label", com.codename1.ui.Label.class);
         UIBuilder.registerCustomComponent("TextField", com.codename1.ui.TextField.class);
         UIBuilder.registerCustomComponent("Tabs", com.codename1.ui.Tabs.class);
         UIBuilder.registerCustomComponent("MultiButton", com.codename1.components.MultiButton.class);
         UIBuilder.registerCustomComponent("GenericSpinner", com.codename1.ui.spinner.GenericSpinner.class);
+=======
+>>>>>>> directory
         if(loadTheme) {
             if(res == null) {
                 try {
@@ -124,6 +130,7 @@ public abstract class StateMachineBase extends UIBuilder {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     @Override
 	protected void exitForm(Form f) {
 =======
@@ -133,6 +140,10 @@ public abstract class StateMachineBase extends UIBuilder {
     public com.codename1.ui.Button findButton1(Component root) {
         return (com.codename1.ui.Button)findByName("Button1", root);
 >>>>>>> master
+=======
+    public com.codename1.ui.Button findButton1(Component root) {
+        return (com.codename1.ui.Button)findByName("Button1", root);
+>>>>>>> directory
     }
 
     public com.codename1.ui.Button findButton1() {
@@ -143,6 +154,7 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
+<<<<<<< HEAD
     public com.codename1.ui.spinner.GenericSpinner findResourcesSpinner(Component root) {
         return (com.codename1.ui.spinner.GenericSpinner)findByName("ResourcesSpinner", root);
     }
@@ -263,6 +275,8 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
+=======
+>>>>>>> directory
     public com.codename1.ui.Button findButton(Component root) {
         return (com.codename1.ui.Button)findByName("Button", root);
     }
@@ -275,6 +289,7 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
+<<<<<<< HEAD
     public com.codename1.components.InfiniteProgress findInfiniteProgress(Component root) {
         return (com.codename1.components.InfiniteProgress)findByName("InfiniteProgress", root);
     }
@@ -512,6 +527,8 @@ public abstract class StateMachineBase extends UIBuilder {
         }
     }
 
+=======
+>>>>>>> directory
     protected void exitForm(Form f) {
         if("LoginPage".equals(f.getName())) {
             exitLoginPage(f);
@@ -994,6 +1011,7 @@ public abstract class StateMachineBase extends UIBuilder {
             c = c.getParent().getLeadParent();
         }
         if(rootContainerName == null) return;
+<<<<<<< HEAD
         if(rootContainerName.equals("LoginPage")) {
             if("username".equals(c.getName())) {
                 onLoginPage_UsernameAction(c, event);
@@ -1029,11 +1047,21 @@ public abstract class StateMachineBase extends UIBuilder {
         if(rootContainerName.equals("Main")) {
             if("LaunchResourceButton".equals(c.getName())) {
                 onMain_LaunchResourceButtonAction(c, event);
+=======
+        if(rootContainerName.equals("Main")) {
+            if("Button".equals(c.getName())) {
+                onMain_ButtonAction(c, event);
+                return;
+            }
+            if("Button1".equals(c.getName())) {
+                onMain_Button1Action(c, event);
+>>>>>>> directory
                 return;
             }
         }
     }
 
+<<<<<<< HEAD
       protected void onLoginPage_UsernameAction(Component c, ActionEvent event) {
       }
 
@@ -1056,6 +1084,12 @@ public abstract class StateMachineBase extends UIBuilder {
       }
 
       protected void onMain_LaunchResourceButtonAction(Component c, ActionEvent event) {
+=======
+      protected void onMain_ButtonAction(Component c, ActionEvent event) {
+      }
+
+      protected void onMain_Button1Action(Component c, ActionEvent event) {
+>>>>>>> directory
       }
 
 }
